@@ -105,7 +105,6 @@ button {
   color: rgb(0, 18, 57);
   font-size: 1.2rem;
   margin-top: 10px;
-  width: 100px;
 }
 .card p {
   margin-top: 20px;
@@ -287,9 +286,62 @@ footer ul li:first-child {
   font-size: 1.7rem;
   margin-bottom: 10px;
 }
-footer .link {
+.menu-container{
+  display: none;
 }
-footer .overview {
+/* media query */
+@media only screen and (max-width:720px){
+  nav .menu-container{
+    display: block;
+  }
+  nav ul{
+    display: none;
+  }
+  .header{
+    flex-direction: column;
+    text-align: center;
+  }
+  .header .right-header-image{
+    width: 400px;
+  }
+  .quality{
+    flex-direction: column;
+    text-align: center;
+  }
+  .quality-img , .testing-img{
+    width:400px
+  }
+  .text-section {
+    flex-direction: column;
+    text-align: center;
+  }
+  .card-container{
+    flex-direction: column;
+    text-align: center;
+  }
+  .card-container .card {
+    margin-top: 20px;
+  }
+  .blue-card-item-container{
+    flex-direction: column;
+  }
+  .banner-small{
+    flex-direction: column;
+    text-align: center;
+  }
+  .banner-right{
+    margin-right: 0px;
+  }
+  .banner-right .banner-button{
+    margin: 0 auto;
+    margin-bottom: 25px;
+  }
+  .banner-left{
+    margin-left: 0px;
+  }
+  footer{
+    flex-direction: column;
+    text-align: center;
+  }
 }
-footer .social-media {
-}
+
